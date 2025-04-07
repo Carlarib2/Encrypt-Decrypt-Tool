@@ -26,6 +26,12 @@ def encrypt():
         text2.place(x=10,y=40,width=380,height=150)
 
         text2.insert(END,encrypt)
+    
+    elif password=="":
+        messagebox.showerror("encryption","Input Password")
+    
+    elif password !="1234":
+        messagebox.showerror("encryption","Invalid Password")
 
 
 def main_screen():
